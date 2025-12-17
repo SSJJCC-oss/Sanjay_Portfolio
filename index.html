@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjay Jacob | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Model Viewer -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <!-- Favicon (optional) -->
+    <!-- <link rel="icon" type="image/png" href="public/favicon.png" /> -->
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Background Canvas -->
+    <canvas id="bg-network"></canvas>
+
+    <!-- Header & Navigation -->
+    <header>
+      <nav>
+        <div class="logo">Sanjay</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ==============================
+         HERO / INTRO SECTION
+    =============================== -->
+    <section id="intro" class="intro">
+      <h1>Hello, I’m <span class="highlight">Sanjay Jacob</span></h1>
+      <h3 class="degree">
+        MEng in Computer Vision & Artificial Intelligence
+        <span class="divider">|</span> University of Limerick
+      </h3>
+      <p class="tagline">
+        Passionate about developing intelligent vision systems, edge-AI
+        prototypes, and real-world human-centred applications.
+      </p>
+
+      <!-- Model Loader -->
+      <div id="model-loader" class="loader">
+        <div class="loader-ring">
+          <svg class="progress-ring" width="120" height="120">
+            <circle
+              class="progress-ring-bg"
+              stroke-width="6"
+              r="50"
+              cx="60"
+              cy="60"
+            />
+            <circle
+              class="progress-ring-circle"
+              stroke-width="6"
+              r="50"
+              cx="60"
+              cy="60"
+            />
+          </svg>
+          <div class="loader-text" id="loading-text">0%</div>
+        </div>
+      </div>
+
+      <!-- 3D Brain Model -->
+      <model-viewer
+  id="brain-model"
+  src="model/brain.glb"
+  alt="3D Brain Model"
+  auto-rotate
+  camera-controls
+  disable-zoom
+  shadow-intensity="1"
+  exposure="1.1"
+  environment-image="neutral"
+  style="
+    display: block;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    background: transparent;
+  "
+></model-viewer>
+
+
+      <!-- Drag Hint -->
+      <div class="interaction-hint" id="interaction-hint">
+        <div class="hint-icon">🖱️</div>
+        <span>Drag to Explore</span>
+      </div>
+
+      <!-- Journey Section -->
+      <div class="journey-subsection">
+        <h2 class="journey-title">Explore My Journey</h2>
+        <p class="journey-subtitle">
+          A look into my education, experience, achievements, and passions.
+        </p>
+
+        <div class="journey-grid">
+          <div class="journey-card education" id="education-card">
+            <h3>🎓 Education</h3>
+          </div>
+          <div class="journey-card experience" id="experience-card">
+            <h3>💼 Experience</h3>
+          </div>
+          <div class="journey-card awards">
+            <h3>🏆 Achievements</h3>
+          </div>
+          <div class="journey-card hobbies">
+            <h3>🎮 Hobbies</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SKILLS SECTION
+    =============================== -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skills-card">
+      <h3>Programming Languages</h3>
+      <p>
+        Python · Java · C++ · C# · JavaScript · HTML · CSS · Node.js · PHP (Basics)
+      </p>
+    </div>
+
+    <div class="skills-card">
+      <h3>Machine Learning & AI</h3>
+      <p>
+        Deep Learning (CNNs, RNNs, Transformers) · PyTorch · TensorFlow · Keras ·
+        Scikit-learn
+      </p>
+    </div>
+
+    <div class="skills-card">
+      <h3>Computer Vision</h3>
+      <p>
+        OpenCV · Image Classification · Object Detection · Pose Estimation ·
+        Webots (Robotics Simulation)
+      </p>
+    </div>
+
+    <div class="skills-card">
+      <h3>Data Science</h3>
+      <p>
+        Pandas · NumPy · Matplotlib · Seaborn · Data Analysis · Visualisation
+      </p>
+    </div>
+
+    <div class="skills-card">
+      <h3>Cloud, DevOps & Tools</h3>
+      <p>
+        AWS (SageMaker – Basics) · Google Cloud AI · Git · GitHub · Docker
+      </p>
+    </div>
+
+    <div class="skills-card">
+      <h3>Development Methodologies</h3>
+      <p>
+        Agile · Scrum · Version Control · Collaborative Development
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- ==============================
+         PROJECTS SECTION
+    =============================== -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <div class="project-card" data-project="elder">
+  <h3>🧓 Elder Monitoring System</h3>
+  <p>Edge-AI system for elder activity and fall detection.</p>
+  <span class="click-hint">Click to explore →</span>
+</div>
+
+<div class="project-card" data-project="wheelchair">
+  <h3>🦽 Robotic Wheelchair Navigation</h3>
+  <p>Voice-controlled wheelchair with AI path planning.</p>
+  <span class="click-hint">Click to explore →</span>
+</div>
+
+<div class="project-card" data-project="snake">
+  <h3>🐍 Snake AI (Reinforcement Learning)</h3>
+  <p>Deep Q-Learning agent trained to master Snake.</p>
+  <span class="click-hint">Click to explore →</span>
+</div>
+
+<div class="project-card" data-project="maze">
+  <h3>🎮 Maze Runner 3D Game</h3>
+  <p>Unity-based FPS maze survival game.</p>
+  <span class="click-hint">Click to explore →</span>
+</div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTACT SECTION
+    =============================== -->
+    <section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <!-- <p class="contact-intro">
+    Interested in my work or would like to discuss opportunities in AI, computer vision,
+    or software engineering? Feel free to reach out or download my CV below.
+  </p> -->
+
+  <div class="contact-actions">
+    <a
+      href="assets/Sanjay_Jacob_CV.pdf"
+      class="cv-download-btn"
+      download
+    >
+      📄 Download CV
+    </a>
+  </div>
+
+  <form
+    onsubmit="alert('Thanks for reaching out! This is a demo form.'); return false;"
+  >
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your email" required />
+
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      rows="4"
+      placeholder="Your message"
+      required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+    <!-- ==============================
+         FULLSCREEN PANELS
+    =============================== -->
+    <div id="education-fullscreen" class="fullscreen-panel">
+      <button class="close-btn" id="close-education">✕</button>
+      <div class="fullscreen-content">
+        <h2>🎓 Education</h2>
+
+        <div class="edu-entry">
+      <h3>MEng Computer Vision & Artificial Intelligence <span>(2025 – Present)</span></h3>
+      <p><strong>University of Limerick, Ireland</strong><br>
+      Advanced programme focusing on computer vision, deep learning, and applied AI.<br>
+      <em>Focus:</em> Image recognition, object detection, and edge/cloud deployment.</p>
+    </div>
+
+    <div class="edu-entry">
+      <h3>MSc Artificial Intelligence <span>(2023 – 2024)</span></h3>
+      <p><strong>University of Kent, UK</strong><br>
+      Specialised in deep learning with PyTorch and TensorFlow; projects in NLP and computer vision.</p>
+    </div>
+
+    <div class="edu-entry">
+      <h3>BSc (Hons) Computer Science with Year in Industry <span>(2019 – 2023)</span></h3>
+      <p><strong>University of Kent, UK</strong><br>
+      Focused on algorithms, data structures, and full-stack development.<br>
+      <em>Placement:</em> CaseWare UK Ltd (JavaScript Developer Intern).</p>
+    </div>
+  </div>
+      </div>
+    </div>
+
+    <div id="experience-fullscreen" class="fullscreen-panel">
+  <button class="close-btn" id="close-experience">&times;</button>
+  <div class="fullscreen-content">
+    <h2>💼 Professional Experience</h2>
+
+    <!-- 🌟 Highlighted Experience -->
+    <div class="exp-entry main-exp">
+      <h3>CaseWare UK Ltd – JavaScript Developer Intern</h3>
+      <span>Placement Year (2021 – 2022) | Kent, United Kingdom</span>
+      <ul>
+        <li>Developed and optimized front-end components for accounting automation software using <strong>JavaScript, React, and HTML/CSS</strong>.</li>
+        <li>Worked within an <strong>Agile development team</strong> to design, test, and deploy responsive web interfaces.</li>
+        <li>Implemented code efficiency improvements and fixed UI/UX bugs through iterative sprints and version control (<strong>Git</strong>).</li>
+        <li>Collaborated cross-functionally with QA and backend engineers to improve <strong>application performance</strong> and streamline deployment pipelines.</li>
+        <li>Gained hands-on exposure to <strong>software testing, code reviews, and DevOps tools</strong>, building a strong foundation in professional software engineering practices.</li>
+      </ul>
+    </div>
+
+    <!-- 🔹 Secondary Roles -->
+    <div class="exp-entry">
+      <h3>Distinctive Bars, Canterbury – Supervisor</h3>
+      <span>September 2023 – August 2025</span>
+      <ul>
+        <li>Led a team of 15 staff, maintaining efficiency and excellent customer service during high-demand hours.</li>
+        <li>Trained new employees and ensured adherence to hygiene and safety standards.</li>
+        <li>Recognized for fostering a professional, collaborative, and customer-focused environment.</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <h3>KFC, Canterbury – General Staff</h3>
+      <span>April 2024 – July 2024</span>
+      <ul>
+        <li>Operated effectively in a fast-paced service environment, ensuring food quality and safety compliance.</li>
+        <li>Assisted with stock rotation, order management, and team coordination during peak hours.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="project-elder" class="fullscreen-panel">
+  <button class="close-btn">✕</button>
+  <div class="fullscreen-content">
+    <h2>🧓 Elder Monitoring System</h2>
+
+    <p>
+      An edge-AI based monitoring system designed to detect daily activities and
+      falls in elderly individuals using computer vision, with real-time alerts
+      for caregivers.
+    </p>
+
+    <h3>Key Features</h3>
+    <ul>
+      <li>Real-time human pose estimation for activity recognition</li>
+      <li>Fall detection logic optimised for edge inference</li>
+      <li>Designed for Raspberry Pi deployment</li>
+      <li>Flask-based backend for alerts and logging</li>
+      <li>Privacy-aware monitoring approach</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <p>Python · Computer Vision · Pose Estimation · Raspberry Pi · Flask · Edge AI</p>
+
+    <h3>Status</h3>
+    <p><em>In active development</em></p>
+  </div>
+</div>
+
+<div id="project-wheelchair" class="fullscreen-panel">
+  <button class="close-btn">✕</button>
+  <div class="fullscreen-content">
+    <h2>🦽 Language-Facilitated Robotic Wheelchair</h2>
+
+    <p>
+      A simulated robotic wheelchair built in Webots that combines voice control,
+      large language models, and classical path planning for indoor navigation.
+    </p>
+
+    <h3>Key Features</h3>
+    <ul>
+      <li>Voice-based control for directional movement</li>
+      <li>LLM-based intent understanding for destination commands</li>
+      <li>A* algorithm for shortest-path planning</li>
+      <li>Obstacle avoidance in a simulated house environment</li>
+      <li>Analysis of sensor drift using GPS and IMU data</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <p>Python · Webots · A* Path Planning · OpenAI API · Robotics Simulation</p>
+
+    <h3>GitHub</h3>
+    <p>
+      <a href="https://github.com/SSJJCC-oss/RoboticWheelChair" target="_blank">
+        View Project on GitHub →
+      </a>
+    </p>
+  </div>
+</div>
+
+<div id="project-snake" class="fullscreen-panel">
+  <button class="close-btn">✕</button>
+  <div class="fullscreen-content">
+    <h2>🐍 Snake AI – Reinforcement Learning</h2>
+
+    <p>
+      A reinforcement learning agent trained using Deep Q-Learning to autonomously
+      play the classic Snake game, improving performance through reward-based learning.
+    </p>
+
+    <h3>Key Features</h3>
+    <ul>
+      <li>Deep Q-Learning implementation from scratch</li>
+      <li>Agent learns optimal actions through trial and error</li>
+      <li>Modular RL architecture (agent, environment, model)</li>
+      <li>Progressive improvement from random to goal-oriented behaviour</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <p>Python · Reinforcement Learning · Deep Q-Learning · Neural Networks</p>
+
+    <h3>GitHub</h3>
+    <p>
+      <a href="https://github.com/SSJJCC-oss/COMP8260" target="_blank">
+        View Project on GitHub →
+      </a>
+    </p>
+  </div>
+</div>
+
+<div id="project-maze" class="fullscreen-panel">
+  <button class="close-btn">✕</button>
+  <div class="fullscreen-content">
+    <h2>🎮 Maze Runner 3D Game</h2>
+
+    <p>
+      A first-person 3D maze survival game developed in Unity, featuring increasing
+      difficulty, AI-driven enemies, and real-time player interaction.
+    </p>
+
+    <h3>Key Features</h3>
+    <ul>
+      <li>First-person gameplay with shooting mechanics</li>
+      <li>Procedurally challenging maze layouts</li>
+      <li>AI-controlled zombie enemies</li>
+      <li>Progressive difficulty across levels</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <p>Unity · C++ · Game AI · 3D Environments · Real-Time Systems</p>
+
+    <h3>GitHub</h3>
+    <p>
+      <a href="https://github.com/SSJJCC-oss/COMP6100" target="_blank">
+        View Project on GitHub →
+      </a>
+    </p>
+  </div>
+</div>
+
+<div id="achievements-fullscreen" class="fullscreen-panel">
+  <button class="close-btn" id="close-achievements">✕</button>
+
+  <div class="fullscreen-content">
+    <h2>🏆 Achievements</h2>
+
+    <!-- =========================
+         Achievement 1: Hackathon
+    ========================== -->
+    <div class="exp-entry">
+      <h3>🥈 ACI Worldwide FooBar Hackathon 2025 — 2nd Place</h3>
+      <span>Limerick, Ireland</span>
+
+      <p>
+        Secured <strong>2nd place</strong> in an 8-hour industry hackathon organised by
+        <strong>ACI Worldwide</strong>, working in a team of three to solve challenges
+        focused on <strong>fraud detection</strong> and <strong>code security</strong>.
+      </p>
+
+      <ul>
+        <li>
+          Designed Python-based data analysis workflows to identify suspicious sender IDs
+        </li>
+        <li>
+          Analysed fraud patterns and system vulnerabilities under real-world constraints
+        </li>
+        <li>
+          Collaborated under time pressure to deliver a working solution within strict deadlines
+        </li>
+        <li>
+          Gained exposure to security and reliability challenges in financial systems
+        </li>
+      </ul>
+
+      <p>
+        <strong>Skills demonstrated:</strong>
+        Python · Data Analysis · Cybersecurity · Teamwork · Problem Solving
+      </p>
+    </div>
+
+    <!-- =========================
+         Achievement 2: i-Teams
+    ========================== -->
+    <div class="exp-entry">
+      <h3>🤝 EIRA i-Teams Kent — Industry Consultancy Programme</h3>
+      <span>University of Kent | 2021</span>
+
+      <p>
+        Selected participant in an <strong>8-week multidisciplinary consultancy programme</strong>,
+        collaborating with industry partners to address real-world business and innovation challenges.
+      </p>
+
+      <ul>
+        <li>
+          Worked in a cross-disciplinary team to analyse industry problems and propose practical solutions
+        </li>
+        <li>
+          Delivered a final presentation to <strong>industry sponsors</strong>, including TRN Ltd
+        </li>
+        <li>
+          Mentored by <strong>Tudor Price</strong>, Deputy CEO of Kent Invicta Chamber of Commerce
+        </li>
+        <li>
+          Developed strong skills in stakeholder communication and professional presentation
+        </li>
+      </ul>
+
+      <p>
+        <strong>Skills demonstrated:</strong>
+        Problem Solving · Communication · Teamwork · Industry Research · Presentation Skills
+      </p>
+
+      <p>
+        🔗
+        <a
+          href="https://www.kent.ac.uk/news/kentlife/28358/students-gain-%20extensive-business-knowledge-from-i-teams-challenge"
+          target="_blank"
+        >
+          Read more about the programme →
+        </a>
+      </p>
+    </div>
+
+    
+  </div>
+</div>
+
+<div id="hobbies-fullscreen" class="fullscreen-panel">
+  <button class="close-btn" id="close-hobbies">✕</button>
+
+  <div class="fullscreen-content">
+    <h2>🎮 Hobbies & Interests</h2>
+
+    <!-- =========================
+         Speedcubing
+    ========================== -->
+    <div class="exp-entry">
+      <h3>🧠 Competitive Speedcubing (3×3 Blindfolded)</h3>
+
+      <p>
+        Competitive speedcuber with participation in <strong>20+ official competitions
+        across four countries</strong>, specialising in the highly demanding
+        <strong>3×3 blindfolded</strong> event.
+      </p>
+
+      <ul>
+        <li>
+          Achieved <strong>1 silver and 3 bronze medals</strong> in official competitions
+        </li>
+        <li>
+          Developed advanced skills in memory, spatial reasoning, and pattern recognition
+        </li>
+        <li>
+          Consistent performance under time pressure and high-concentration environments
+        </li>
+        <li>
+          Demonstrates discipline, focus, and long-term skill development
+        </li>
+      </ul>
+    </div>
+
+    <!-- =========================
+         Music & Songwriting
+    ========================== -->
+    <div class="exp-entry">
+      <h3>🎵 Songwriting & Music Production</h3>
+
+      <p>
+        Enthusiastic songwriter and music producer with hands-on experience using
+        professional digital audio workstations.
+      </p>
+
+      <ul>
+        <li>
+          Worked extensively with <strong>FL Studio</strong> for composition and arrangement
+        </li>
+        <li>
+          Experience translating abstract ideas into structured creative outputs
+        </li>
+        <li>
+          Strong appreciation for rhythm, timing, and iterative refinement
+        </li>
+        <li>
+          Uses music as a creative outlet alongside technical problem-solving
+        </li>
+      </ul>
+    </div>
+
+    <!-- =========================
+         Football
+    ========================== -->
+    <div class="exp-entry">
+      <h3>⚽ Football (Competitive Level)</h3>
+
+      <p>
+        Played football competitively throughout formative years, representing teams
+        in national and international tournaments.
+      </p>
+
+      <ul>
+        <li>
+          Competed in <strong>TAISI</strong>, a national-level sporting event held in
+          Bengaluru, India
+        </li>
+        <li>
+          Participated in <strong>NSL tournaments</strong> in Dubai
+        </li>
+        <li>
+          Developed strong teamwork, communication, and leadership skills
+        </li>
+        <li>
+          Experience performing in structured, competitive environments
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- ==============================
+         FOOTER + BACK TO TOP
+    =============================== -->
+    <footer>&copy; 2025 Sanjay Jacob. All Rights Reserved.</footer>
+    <button id="back-to-top" aria-label="Back to top">&#8679;</button>
+
+    <!-- External JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
