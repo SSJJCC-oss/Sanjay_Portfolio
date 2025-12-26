@@ -6,7 +6,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
 }
 
@@ -953,6 +953,132 @@ footer {
 .cv-download-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 28px rgba(44, 152, 240, 0.7);
+}
+
+/* =========================
+   Hero Layout (Text + Photo)
+========================= */
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-name {
+  font-size: 2.8rem;           /* reduced from 3.2 */
+  font-weight: 700;
+  color: #6faeff;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.4px;
+
+  /* much subtler glow */
+  text-shadow:
+    0 0 6px rgba(111, 174, 255, 0.35);
+}
+
+.hero-role {
+  .hero-role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #7fdaf0;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.3px;
+}
+
+}
+
+.hero-role::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin-top: 0.6rem;
+  background: linear-gradient(
+    90deg,
+    #66d9e8,
+    rgba(102, 217, 232, 0.15)
+  );
+}
+
+.hero-text .degree {
+  margin-bottom: 0.9rem;
+}
+
+.hero-text .tagline {
+  font-size: 1.05rem;
+  color: #c5d3ea;
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(102, 217, 232, 0.6);
+  box-shadow: 0 0 25px rgba(44, 152, 240, 0.55);
+}
+
+.hero-meta {
+  font-size: 0.95rem;
+  color: #9fb1cc;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.2px;
+}
+
+.hero-summary {
+  font-size: 1.05rem;
+  color: #c9d6ee;
+  max-width: 540px;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+/* subtle vertical accent */
+.hero-summary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 2px;
+  height: calc(100% - 0.6rem);
+  background: linear-gradient(
+    180deg,
+    #66d9e8,
+    rgba(102, 217, 232, 0.15)
+  );
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text .tagline {
+    margin: 0 auto;
+  }
 }
 
 
