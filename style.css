@@ -443,6 +443,59 @@ ul.skills-list li:hover {
   color: #b0c9db;
 }
 
+/* =========================
+   Project Image Cards
+========================= */
+
+.project-image-card {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  height: 260px;
+}
+
+.project-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.85);
+  transition: transform 0.5s ease, filter 0.4s ease;
+}
+
+/* Overlay */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 15, 30, 0.9),
+    rgba(10, 15, 30, 0.25)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.2rem 1.4rem;
+  pointer-events: none;
+}
+
+.project-overlay h3 {
+  color: #66d9e8;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-image-card:hover .project-cover {
+  transform: scale(1.06);
+  filter: brightness(1);
+}
+
+.project-image-card:hover {
+  box-shadow: 0 0 30px rgba(44, 152, 240, 0.85),
+              0 0 50px rgba(102, 217, 232, 0.6);
+}
+
+
 .contact form {
   max-width: 450px;
   margin: 0 auto;
