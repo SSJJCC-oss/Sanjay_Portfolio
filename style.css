@@ -469,20 +469,39 @@ ul.skills-list li:hover {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(10, 15, 30, 0.9),
-    rgba(10, 15, 30, 0.25)
+    rgba(10, 15, 30, 0.92),
+    rgba(10, 15, 30, 0.15)
   );
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 1.2rem 1.4rem;
+
+  opacity: 0;                  /* 👈 hidden initially */
+  transform: translateY(12px); /* 👈 subtle slide */
+  transition: opacity 0.35s ease, transform 0.35s ease;
+
   pointer-events: none;
 }
 
+.project-card:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .project-overlay h3 {
   color: #66d9e8;
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.click-hint {
+  font-size: 0.9rem;
+  color: #9fdfff;
+  opacity: 0.85;
 }
 
 .project-image-card:hover .project-cover {
