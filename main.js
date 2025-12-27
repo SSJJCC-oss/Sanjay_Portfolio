@@ -224,7 +224,7 @@ projectCards.forEach(card => {
     panel.style.display = "flex";
     setTimeout(() => panel.classList.add("active"), 10);
 
-    const closeBtn = panel.querySelector(".close-btn");
+    const closeBtn = panel.querySelector(".back-btn");
     closeBtn.onclick = () => {
       panel.classList.remove("active");
       setTimeout(() => {
@@ -255,26 +255,26 @@ if (achievementsCard && achievementsFullscreen && closeAchievements) {
   });
 }
 
-/* ===================================================
-   8. Hobbies Fullscreen Panel
-=================================================== */
-const hobbiesCard = document.querySelector(".journey-card.hobbies");
-const hobbiesFullscreen = document.getElementById("hobbies-fullscreen");
-const closeHobbies = document.getElementById("close-hobbies");
+// /* ===================================================
+//    8. Hobbies Fullscreen Panel
+// =================================================== */
+// const hobbiesCard = document.querySelector(".journey-card.hobbies");
+// const hobbiesFullscreen = document.getElementById("hobbies-fullscreen");
+// const closeHobbies = document.getElementById("close-hobbies");
 
-if (hobbiesCard && hobbiesFullscreen && closeHobbies) {
-  hobbiesCard.addEventListener("click", () => {
-    hobbiesFullscreen.style.display = "flex";
-    setTimeout(() => hobbiesFullscreen.classList.add("active"), 10);
-  });
+// if (hobbiesCard && hobbiesFullscreen && closeHobbies) {
+//   hobbiesCard.addEventListener("click", () => {
+//     hobbiesFullscreen.style.display = "flex";
+//     setTimeout(() => hobbiesFullscreen.classList.add("active"), 10);
+//   });
 
-  closeHobbies.addEventListener("click", () => {
-    hobbiesFullscreen.classList.remove("active");
-    setTimeout(() => {
-      hobbiesFullscreen.style.display = "none";
-    }, 400);
-  });
-}
+//   closeHobbies.addEventListener("click", () => {
+//     hobbiesFullscreen.classList.remove("active");
+//     setTimeout(() => {
+//       hobbiesFullscreen.style.display = "none";
+//     }, 400);
+//   });
+// }
 
 
 /* ===================================================

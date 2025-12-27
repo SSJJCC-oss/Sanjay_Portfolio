@@ -737,6 +737,41 @@ ul.skills-list li:hover {
   border-radius: 10px;
 }
 
+/* =========================
+   Back Button for Fullscreen Panels
+========================= */
+
+.back-btn {
+  position: fixed;
+  top: 22px;
+  left: 25px; /* 👈 left side = navigation */
+  background: rgba(15, 17, 26, 0.7);
+  border: 1px solid rgba(102, 217, 232, 0.4);
+  border-radius: 999px;
+
+  padding: 0.45rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #66d9e8;
+  cursor: pointer;
+
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 14px rgba(102, 217, 232, 0.35);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+  z-index: 100000;
+}
+
+.back-btn:hover {
+  background: rgba(44, 152, 240, 0.15);
+  transform: translateX(-3px);
+  box-shadow: 0 0 22px rgba(102, 217, 232, 0.6);
+}
+
+
 .close-btn {
   position: fixed;
   top: 20px;
