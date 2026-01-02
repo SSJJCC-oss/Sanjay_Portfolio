@@ -255,6 +255,20 @@ if (achievementsCard && achievementsFullscreen && closeAchievements) {
   });
 }
 
+/* ===================================================
+   Scroll Cue Fade Out
+=================================================== */
+
+const scrollCue = document.querySelector(".scroll-cue");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 120 && scrollCue) {
+    scrollCue.style.opacity = "0";
+  }
+});
+
+
+
 // /* ===================================================
 //    8. Hobbies Fullscreen Panel
 // =================================================== */

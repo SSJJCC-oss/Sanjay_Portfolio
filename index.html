@@ -28,13 +28,22 @@
     <!-- Background Canvas -->
     <canvas id="bg-network"></canvas>
 
+    <div class="scroll-cue">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </div>
+
+
+
     <!-- Header & Navigation -->
     <header>
       <nav>
         <div class="logo">Sanjay</div>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#intro">Home</a></li>
+          <li><a href="#intro">About Me</a></li>
+          <li><a href="#journey">My Journey</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -55,10 +64,10 @@
     <!-- LEFT: Professional Text -->
     
     <div class="hero-text">
-      <h1 class="hero-name">Sanjay Jacob</h1>
+      <h1 class="hero-name">About Me</h1>
 
 <p class="hero-role">
-  Computer Vision & AI Engineer
+  Computer Vision & AI Engineering Student
 </p>
 
 <p class="hero-meta">
@@ -139,7 +148,7 @@
   <!-- =========================
        JOURNEY SECTION (UNCHANGED)
   ========================== -->
-  <div class="journey-subsection">
+  <div class="journey-subsection" id="journey">
     <h2 class="journey-title">Explore My Journey </br></br></h2>
     
     <div class="journey-grid">
@@ -312,29 +321,159 @@
       <button class="back-btn" id="close-education">
   ← Back
 </button>
-      <div class="fullscreen-content">
-        <h2>🎓 Education</h2>
+    <div class="fullscreen-content">
+  <h2>🎓 Education</h2>
 
-        <div class="edu-entry">
-      <h3>MEng Computer Vision & Artificial Intelligence <span>(2025 – Present)</span></h3>
-      <p><strong>University of Limerick, Ireland</strong><br>
-      Advanced programme focusing on computer vision, deep learning, and applied AI.<br>
-      <em>Focus:</em> Image recognition, object detection, and edge/cloud deployment.</p>
-    </div>
+  <!-- =========================
+       Masters
+  ========================== -->
+  <h3 style="margin-top: 2rem; font-weight: 700;">Masters</h3>
 
-    <div class="edu-entry">
-      <h3>MSc Artificial Intelligence <span>(2023 – 2024)</span></h3>
-      <p><strong>University of Kent, UK</strong><br>
-      Specialised in deep learning with PyTorch and TensorFlow; projects in NLP and computer vision.</p>
-    </div>
+  <!-- MEng (Ongoing) -->
+  <div class="edu-entry">
+  <h4>
+    MEng Computer Vision & Artificial Intelligence
+    <span>(2025 – Present)</span>
+  </h4>
 
-    <div class="edu-entry">
-      <h3>BSc (Hons) Computer Science with Year in Industry <span>(2019 – 2023)</span></h3>
-      <p><strong>University of Kent, UK</strong><br>
-      Focused on algorithms, data structures, and full-stack development.<br>
-      <em>Placement:</em> CaseWare UK Ltd (JavaScript Developer Intern).</p>
-    </div>
+  <p>
+    <strong>University of Limerick, Ireland</strong><br />
+    A taught master’s programme developing advanced skills in computer vision, machine learning, and applied artificial intelligence.
+  </p>
+
+  <ul>
+    <li>
+      Builds deep knowledge of state-of-the-art vision systems, AI algorithms, and practical machine learning applications, preparing students to solve real-world problems.
+    </li>
+    <li>
+      Covers core topics such as image processing, deep learning for vision, and robust pattern recognition, with focus on modern neural network based approaches. 
+    </li>
+    <li>
+      Develops engineering skills through hands-on coding, workshops, and system design exercises, emphasising industry relevance and software engineering practice.
+    </li>
+  
+  </ul>
+
+  <p>
+    <strong>Status:</strong> In progress
+  </p>
+</div>
+
+
+  <!-- MSc (Completed) -->
+<div class="edu-entry">
+  <h4>
+    MSc Artificial Intelligence
+    <span>(2023 – 2024)</span>
+  </h4>
+
+  <p>
+    <strong>University of Kent, Canterbury, United Kingdom</strong>
+  </p>
+
+  <ul>
+    <li>
+      Postgraduate programme focused on the design, implementation, and
+      evaluation of intelligent systems, combining AI theory with hands-on
+      software development.
+    </li>
+    <li>
+      Gained practical experience implementing core AI techniques including
+      search, optimisation, learning algorithms, and bio-inspired computation.
+    </li>
+    <li>
+      Developed AI-driven applications through structured programming,
+      algorithmic reasoning, and system-level problem solving using Python.
+    </li>
+   
+    <li>
+      Completed a final system-level project involving the design and training
+      of a <strong>Reinforcement Learning–based Snake AI agent</strong>, applying
+      reward optimisation and autonomous decision-making.
+    </li>
+  </ul>
+
+  <p>
+    <strong>Degree Status:</strong> Graduated
+  </p>
+
+  <!-- Graduation Video -->
+  <div style="margin-top: 1.5rem;">
+    <p><strong>Graduation: </br></br></strong></p>
+    <video
+      src="Pictures/Journey/Education/MSc/MSc_graduation.mp4"
+      controls
+      style="
+        width: 100%;
+        max-width: 600px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(44, 152, 240, 0.4);
+      "
+    ></video>
   </div>
+</div>
+
+
+
+  <!-- =========================
+       Bachelors
+  ========================== -->
+  <h3 style="margin-top: 2.5rem; font-weight: 700;">Bachelors</h3>
+
+<div class="edu-entry">
+  <h4>
+    BSc (Hons) Computer Science with Year in Industry
+    <span>(2019 – 2023)</span>
+  </h4>
+
+  <p>
+    <strong>University of Kent, Canterbury, United Kingdom</strong>
+  </p>
+
+  <ul>
+    <li>
+      Undergraduate degree providing a strong foundation in core computer
+      science principles including algorithms, data structures, software
+      engineering, and object-oriented programming.
+    </li>
+    <li>
+      Gained experience across multiple areas of computing such as databases,
+      web development, operating systems, and collaborative software
+      development.
+    </li>
+    <li>
+      Completed a <strong>one-year industrial placement</strong> as part of the
+      degree, applying academic knowledge in a professional software
+      engineering environment.
+    </li>
+    <li>
+      Industrial placement completed at <strong>CaseWare UK Ltd</strong>,
+      working as a JavaScript Developer Intern within an Agile development team.
+    </li>
+  </ul>
+
+  <p>
+    <strong>Degree Status:</strong> Graduated
+  </p>
+
+  <!-- Graduation Video -->
+  <div style="margin-top: 1.5rem;">
+    <p><strong>Graduation:</br></br></strong></p>
+    <video
+      src="Pictures/Journey/Education/BSc/BSc_graduation.mp4"
+      controls
+      style="
+        width: 100%;
+        max-width: 600px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(44, 152, 240, 0.4);
+      "
+    ></video>
+  </div>
+</div>
+
+</div>
+
       </div>
     </div>
 
@@ -346,17 +485,65 @@
     <h2>💼 Professional Experience</h2>
 
     <!-- 🌟 Highlighted Experience -->
-    <div class="exp-entry main-exp">
-      <h3>CaseWare UK Ltd – JavaScript Developer Intern</h3>
-      <span>Placement Year (2021 – 2022) | Kent, United Kingdom</span>
-      <ul>
-        <li>Developed and optimized front-end components for accounting automation software using <strong>JavaScript, React, and HTML/CSS</strong>.</li>
-        <li>Worked within an <strong>Agile development team</strong> to design, test, and deploy responsive web interfaces.</li>
-        <li>Implemented code efficiency improvements and fixed UI/UX bugs through iterative sprints and version control (<strong>Git</strong>).</li>
-        <li>Collaborated cross-functionally with QA and backend engineers to improve <strong>application performance</strong> and streamline deployment pipelines.</li>
-        <li>Gained hands-on exposure to <strong>software testing, code reviews, and DevOps tools</strong>, building a strong foundation in professional software engineering practices.</li>
-      </ul>
-    </div>
+   <div class="exp-entry main-exp">
+  <h3>CaseWare UK Ltd — JavaScript Developer Intern</h3>
+  <span>June 2021 – June 2022 | Maidstone, United Kingdom</span>
+
+  <ul>
+    <li>
+      Worked as part of an Agile cloud development team contributing to
+      CaseWare’s enterprise-level auditing and tax software used by
+      professional and corporate clients.
+    </li>
+    <li>
+      Interpreted complex business and tax specifications and implemented
+      requirements using clean, maintainable <strong>JavaScript</strong>,
+      alongside <strong>HTML</strong> and <strong>CSS</strong>.
+    </li>
+    <li>
+      Developed and maintained dynamic tax forms and PDF overlays for the
+      CaseWare Cloud platform, contributing to products such as Trust Tax,
+      Personal Tax (ISA), and Partnership Tax.
+    </li>
+    <li>
+      Utilised internal tooling (e.g. FormBuilder) to efficiently construct
+      and manage form structures, improving development speed and
+      consistency.
+    </li>
+    <li>
+      Collaborated closely with QA engineers to identify, track, and resolve
+      defects, gaining experience with testing workflows and tools such as
+      Cucumber.
+    </li>
+    <li>
+      Actively participated in stand-ups, code reviews, and team discussions,
+      strengthening understanding of professional software development
+      practices and version control workflows.
+    </li>
+  </ul>
+
+  <p>
+    <strong>Skills demonstrated:</strong>
+    JavaScript · Web Development · Agile · Cloud Platforms · Software Testing ·
+    Team Collaboration
+  </p>
+</div>
+
+<div class="exp-entry">
+  <h3>Limerick Strand Hotel — Food & Beverage Assistant</h3>
+  <span>November 2025 – Present | Limerick, Ireland</span>
+
+  <ul>
+    <li>
+      Supporting day-to-day food and beverage service in a fast-paced hotel
+      environment while balancing postgraduate studies.
+    </li>
+    <li>
+      Demonstrating strong communication, teamwork, and customer service
+      skills in a professional hospitality setting.
+    </li>
+  </ul>
+</div>
 
     <!-- 🔹 Secondary Roles -->
     <div class="exp-entry">
@@ -377,6 +564,8 @@
         <li>Assisted with stock rotation, order management, and team coordination during peak hours.</li>
       </ul>
     </div>
+
+    
   </div>
 </div>
 
@@ -519,35 +708,51 @@
          Achievement 1: Hackathon
     ========================== -->
     <div class="exp-entry">
-      <h3>🥈 ACI Worldwide FooBar Hackathon 2025 — 2nd Place</h3>
-      <span>Limerick, Ireland</span>
+  <h3>🏆 ACI Worldwide Hackathon 2025</h3>
+  <span>Limerick, Ireland</span>
 
-      <p>
-        Secured <strong>2nd place</strong> in an 8-hour industry hackathon organised by
-        <strong>ACI Worldwide</strong>, working in a team of three to solve challenges
-        focused on <strong>fraud detection</strong> and <strong>code security</strong>.
-      </p>
+  <p>
+    Competed in an industry-led hackathon organised by
+    <strong>ACI Worldwide</strong>, focused on solving real-world challenges
+    related to <strong>fraud detection</strong> and <strong>code security</strong>
+    within financial systems. Secured a 2nd place finish among multiple teams.
+  </p>
 
-      <ul>
-        <li>
-          Designed Python-based data analysis workflows to identify suspicious sender IDs
-        </li>
-        <li>
-          Analysed fraud patterns and system vulnerabilities under real-world constraints
-        </li>
-        <li>
-          Collaborated under time pressure to deliver a working solution within strict deadlines
-        </li>
-        <li>
-          Gained exposure to security and reliability challenges in financial systems
-        </li>
-      </ul>
+  <ul>
+    <li>
+      Designed Python-based data analysis workflows to identify suspicious
+      sender IDs and anomalous transaction patterns.
+    </li>
+    <li>
+      Analysed fraud scenarios and potential system vulnerabilities under
+      realistic operational constraints.
+    </li>
+    <li>
+      Collaborated under time pressure to develop and present a working
+      technical solution within a limited timeframe.
+    </li>
+    <li>
+      Gained exposure to security, reliability, and risk considerations in
+      large-scale financial software systems.
+    </li>
+  </ul>
 
-      <p>
-        <strong>Skills demonstrated:</strong>
-        Python · Data Analysis · Cybersecurity · Teamwork · Problem Solving
-      </p>
-    </div>
+  <p>
+    <strong>Skills demonstrated:</strong>
+    Python · Data Analysis · Cybersecurity · Problem Solving · Industry Collaboration
+  </p>
+
+  <!-- Team Photo -->
+  <div style="margin-top: 1.5rem;">
+    <img
+  src="Pictures/Achievements/hackathon.jpg"
+  alt="ACI Worldwide Hackathon Team"
+  class="fullscreen-media"
+/>
+
+  </div>
+</div>
+
 
     <!-- =========================
          Achievement 2: i-Teams
@@ -591,6 +796,52 @@
         </a>
       </p>
     </div>
+
+    <div class="exp-entry">
+  <h3>🎤 Guest Speaker — University of Kent</h3>
+  <span>University of Kent, Canterbury, United Kingdom</span>
+
+  <p>
+    Invited as a guest speaker at the University of Kent to share my academic
+    and professional journey with junior students, reflecting on my
+    <strong>industrial placement year</strong>, final-year undergraduate
+    project, and postgraduate research in Artificial Intelligence.
+  </p>
+
+  <ul>
+    <li>
+      Discussed real-world challenges and learning outcomes from working in
+      the AI industry during the placement year, offering practical advice
+      to students considering similar pathways.
+    </li>
+    <li>
+      Shared insights into the development of my final undergraduate project
+      and master’s research, highlighting the progression from academic study
+      to applied AI innovation.
+    </li>
+    <li>
+      Spoke about career development, continuous learning, and future
+      opportunities within the rapidly evolving AI landscape.
+    </li>
+    <li>
+      Engaged with students through discussion and Q&A, encouraging reflection
+      on personal goals and professional growth.
+    </li>
+  </ul>
+
+  <p>
+    <strong>Skills demonstrated:</strong>
+    Public Speaking · Mentoring · Communication · Leadership · Industry Insight
+  </p>
+
+  <!-- Talk Photo -->
+  <img
+    src="Pictures/Achievements/placement_talk.jpg"
+    alt="Guest Speaker Talk at University of Kent"
+    class="fullscreen-media"
+  />
+</div>
+
 
     
   </div>

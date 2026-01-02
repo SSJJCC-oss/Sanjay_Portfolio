@@ -444,6 +444,81 @@ ul.skills-list li:hover {
 }
 
 /* =========================
+   Scroll Cue (Mouse + Dot)
+========================= */
+
+.scroll-cue {
+  position: fixed;
+  left: 52px;              /* 👈 move toward center of gap */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+
+
+
+
+/* Mouse outline */
+.mouse {
+  width: 32px;             /* 👈 bigger */
+  height: 52px;            /* 👈 taller */
+  border: 2.5px solid #66d9e8;
+  border-radius: 22px;
+  position: relative;
+  box-shadow: 
+    0 0 18px rgba(102, 217, 232, 0.6),
+    0 0 30px rgba(44, 152, 240, 0.4);
+}
+
+/* Moving dot */
+.wheel {
+  width: 7px;              /* 👈 slightly bigger dot */
+  height: 7px;
+  background: #66d9e8;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollWheel 1.6s infinite ease-in-out;
+  box-shadow:
+    0 0 10px rgba(102, 217, 232, 0.9),
+    0 0 18px rgba(44, 152, 240, 0.8);
+}
+
+
+/* Dot animation */
+@keyframes scrollWheel {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-50%, 14px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 18px);
+  }
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  .scroll-cue {
+    display: none;
+  }
+}
+
+
+/* =========================
    Project Image Cards
 ========================= */
 
@@ -719,6 +794,21 @@ ul.skills-list li:hover {
   opacity: 1;
   pointer-events: auto; /* Re-enable when visible */
 }
+
+/* =========================
+   Fullscreen Media (Images & Videos)
+========================= */
+
+.fullscreen-media {
+  display: block;
+  width: 100%;
+  max-width: 300px;   /* 👈 reduced size */
+  margin: 1.2rem auto 0;
+
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(44, 152, 240, 0.35);
+}
+
 
 .fullscreen-content {
   flex: 1;
