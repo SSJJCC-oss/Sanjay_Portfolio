@@ -279,6 +279,64 @@ toggleBtn.addEventListener("click", () => {
     : "👥 View Other Work Experience";
 });
 
+// ================================
+// EMAILJS CONTACT FORM HANDLER
+// ================================
+
+(function () {
+  emailjs.init("QAn2yE_DKgruVa590"); // <-- from EmailJS dashboard
+})();
+
+const contactForm = document.querySelector("#contact form");
+
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  // --------------------
+  // Email validation
+  // --------------------
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(email)) {
+    alert("❌ Incorrect email address");
+    return;
+  }
+
+  if (!name || !message) {
+    alert("❌ Please fill in all fields");
+    return;
+  }
+
+  // --------------------
+  // Send email via EmailJS
+  // --------------------
+  emailjs
+    .send(
+      "service_rmxhyyi",
+      "template_cw3f92c",
+      {
+        name: name,
+        email: email,
+        message: message,
+        time: new Date().toLocaleString()
+      }
+    )
+    .then(
+      function () {
+        alert("✅ Message sent successfully!");
+        contactForm.reset();
+      },
+      function (error) {
+        console.error("EmailJS error:", error);
+        alert("❌ Failed to send message. Please try again later.");
+      }
+    );
+});
+
 
 
 // /* ===================================================
