@@ -267,6 +267,18 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const toggleBtn = document.getElementById("toggle-other-exp");
+const otherExp = document.getElementById("other-experience");
+
+toggleBtn.addEventListener("click", () => {
+  const isHidden = otherExp.style.display === "none";
+
+  otherExp.style.display = isHidden ? "block" : "none";
+  toggleBtn.textContent = isHidden
+    ? "⬆ Hide Other Work Experience"
+    : "👥 View Other Work Experience";
+});
+
 
 
 // /* ===================================================
