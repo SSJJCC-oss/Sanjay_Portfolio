@@ -122,6 +122,19 @@ nav {
   letter-spacing: 1px;
 }
 
+
+/* =========================
+   Fix anchor scroll offset
+========================= */
+
+#intro,
+#journey,
+#skills,
+#projects,
+#contact {
+  scroll-margin-top: 100px;
+}
+
 /* ========================
    Interaction Hint (right side of model)
    ======================== */
