@@ -155,9 +155,9 @@ modelViewer.addEventListener("load", () => {
         setTimeout(() => {
           hint.style.animation = "fadeInHint 1s ease forwards";
         }, 800);
-        setTimeout(() => {
-          hint.style.animation = "fadeOutHint 1s ease forwards";
-        }, 7000);
+        // setTimeout(() => {
+        //   hint.style.animation = "fadeOutHint 1s ease forwards";
+        // }, 7000);
       }, 500);
     }, 300);
   });
