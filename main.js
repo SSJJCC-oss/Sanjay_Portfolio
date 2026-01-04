@@ -175,6 +175,33 @@ setTimeout(() => {
 }, 10000);
 
 /* ===================================================
+   Achievements & Interests Tabs
+=================================================== */
+
+const tabButtons = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target = btn.dataset.tab;
+
+    // Update buttons
+    tabButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // Update content
+    tabContents.forEach(content => {
+      content.classList.remove("active");
+    });
+
+    document
+      .getElementById(`tab-${target}`)
+      .classList.add("active");
+  });
+});
+
+
+/* ===================================================
    5. Fullscreen Panels (Education & Experience)
 =================================================== */
 const eduCard = document.querySelector(".journey-card.education");

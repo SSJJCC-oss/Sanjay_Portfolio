@@ -71,7 +71,8 @@ nav {
   border-radius: 12px;
   box-shadow: 0 0 25px #1a73e8aa;
 }
-  
+
+
 
 #loading-text {
   font-size: 1.2rem;
@@ -129,6 +130,85 @@ nav {
 /* =========================
    Fix anchor scroll offset
 ========================= */
+/* =========================
+   Tabs Header (Achievements & Interests)
+========================= */
+
+.tabs-header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid rgba(102, 217, 232, 0.4);
+  color: #66d9e8;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab-btn:hover {
+  background: rgba(102, 217, 232, 0.12);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #2c98f0, #66d9e8);
+  color: #0f111a;
+  box-shadow: 0 0 14px rgba(102, 217, 232, 0.5);
+}
+/* =========================
+   Tab Content Switching
+========================= */
+
+.tab-content {
+  display: none;
+  animation: fadeInTab 0.35s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeInTab {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   Interests Tab Styling
+========================= */
+
+.interest-entry {
+  margin-bottom: 2.2rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid rgba(102, 217, 232, 0.18);
+}
+
+.interest-entry h3 {
+  color: #66d9e8;
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.interest-entry p {
+  color: #cce7ff;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
 
 #intro,
 #journey,
