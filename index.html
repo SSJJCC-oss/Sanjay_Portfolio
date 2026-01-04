@@ -101,24 +101,15 @@
        3D MODEL (UNCHANGED)
   ========================== -->
 
+ <!-- 3D Model Wrapper -->
+<div class="model-wrapper">
+
   <!-- Model Loader -->
   <div id="model-loader" class="loader">
     <div class="loader-ring">
       <svg class="progress-ring" width="120" height="120">
-        <circle
-          class="progress-ring-bg"
-          stroke-width="6"
-          r="50"
-          cx="60"
-          cy="60"
-        />
-        <circle
-          class="progress-ring-circle"
-          stroke-width="6"
-          r="50"
-          cx="60"
-          cy="60"
-        />
+        <circle class="progress-ring-bg" stroke-width="6" r="50" cx="60" cy="60" />
+        <circle class="progress-ring-circle" stroke-width="6" r="50" cx="60" cy="60" />
       </svg>
       <div class="loader-text" id="loading-text">0%</div>
     </div>
@@ -128,22 +119,16 @@
   <model-viewer
     id="brain-model"
     src="model/brain.glb"
-    alt="3D Brain Model"
     auto-rotate
     camera-controls
     disable-zoom
     shadow-intensity="1"
     exposure="1.1"
     environment-image="neutral"
-    style="
-      display: block;
-      margin: 40px auto;
-      width: 100%;
-      max-width: 500px;
-      height: 450px;
-      background: transparent;
-    "
   ></model-viewer>
+
+</div>
+
 
   <!-- Drag Hint -->
   <div class="interaction-hint" id="interaction-hint">
