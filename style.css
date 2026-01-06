@@ -209,6 +209,49 @@ nav {
   margin-bottom: 0.8rem;
 }
 
+/* =========================
+   Interests Cards
+========================= */
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+.interest-card {
+  background: rgba(34, 51, 95, 0.65);
+  border-radius: 16px;
+  padding: 1.5rem 1.6rem;
+  border: 1px solid rgba(102, 217, 232, 0.18);
+  box-shadow: 0 0 18px rgba(44, 152, 240, 0.25);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.interest-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 30px rgba(44, 152, 240, 0.6),
+    0 0 45px rgba(102, 217, 232, 0.4);
+}
+
+.interest-card h3 {
+  color: #66d9e8;
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+}
+
+.interest-card p {
+  color: #cce7ff;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 0.8rem;
+}
+
+.interest-card p:last-child {
+  margin-bottom: 0;
+}
+
 
 #intro,
 #journey,
