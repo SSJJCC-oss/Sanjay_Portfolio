@@ -426,7 +426,7 @@ h2 {
 
 /* === Hero Section Styling === */
 .intro {
-  text-align: center;
+  text-align: left;
   padding: 2rem 1rem;
 }
 
@@ -948,6 +948,13 @@ ul.skills-list li:hover {
   box-shadow: 0 0 18px rgba(44, 152, 240, 0.35);
 }
 
+.fullscreen-content p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+
 
 .fullscreen-content {
   flex: 1;
@@ -965,6 +972,8 @@ ul.skills-list li:hover {
   background: rgba(102, 217, 232, 0.4);
   border-radius: 10px;
 }
+
+
 
 /* =========================
    Back Button for Fullscreen Panels
@@ -1500,7 +1509,7 @@ footer {
 }
 
 .hero-name {
-  font-size: 2.8rem;           /* reduced from 3.2 */
+  font-size: 1.8rem !important;           /* reduced from 3.2 */
   font-weight: 700;
   color: #6faeff;
   margin-bottom: 0.35rem;
@@ -1574,6 +1583,9 @@ footer {
   line-height: 1.7;
   position: relative;
   padding-left: 1.1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 /* subtle vertical accent */
