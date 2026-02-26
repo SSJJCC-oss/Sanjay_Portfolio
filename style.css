@@ -1621,7 +1621,91 @@ footer {
   }
 }
 
+/* =========================
+   Speedcubing Gallery Preview
+========================= */
 
+.cubing-gallery-preview {
+  display: flex;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(102,217,232,0.2);
+}
+
+/* LEFT SIDE images */
+.gallery-preview-images {
+  display: flex;
+  flex: 3;
+}
+
+.gallery-preview-images img {
+  width: 50%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.gallery-preview-images video {
+  width: 50%;
+  height: 160px;
+  object-fit: contain;
+  background: black;
+}
+
+.gallery-preview-images img:hover {
+  transform: scale(1.05);
+}
+
+/* RIGHT SIDE bar */
+.gallery-more {
+  flex: 1;
+  background: linear-gradient(135deg,#2c98f0,#66d9e8);
+  color: #0f111a;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.gallery-more:hover {
+  transform: translateX(5px);
+}
+
+/* =========================
+   Interest Videos
+========================= */
+
+.interest-video {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.interest-video video {
+  width: 40%;           /* smaller size */
+  max-width: 280px;     /* professional compact media size */
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(44,152,240,0.35);
+}
+
+/* =========================
+   Interest Images
+========================= */
+
+.interest-image {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.interest-image img {
+  width: 40%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(44,152,240,0.35);
+}
 /* ===================================================
    END OF STYLE SHEET
 =================================================== */
