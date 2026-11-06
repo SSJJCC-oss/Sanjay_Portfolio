@@ -314,9 +314,9 @@ toggleBtn.addEventListener("click", () => {
   emailjs.init("QAn2yE_DKgruVa590"); // <-- from EmailJS dashboard
 })();
 
-const contactForm = document.querySelector("#contact form");
+const contactForm = document.getElementById("contact-form");
 
-contactForm.addEventListener("submit", function (e) {
+if (contactForm) contactForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const name = document.getElementById("name").value.trim();
@@ -391,3 +391,5 @@ contactForm.addEventListener("submit", function (e) {
 /* ===================================================
    END OF SCRIPT
 =================================================== */
+
+document.getElementById("year").textContent = new Date().getFullYear();

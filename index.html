@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sanjay Jacob | Portfolio</title>
+    <meta name="description" content="Sanjay Jacob — AI Engineer building agentic AI systems and edge computer vision. MEng Computer Vision & AI, University of Limerick." />
 
     <!-- Google Fonts -->
     <link
@@ -69,22 +70,26 @@
 
     <!-- LEFT: Professional Text -->
     
-    <div class="hero-text">
-      <h1 class="hero-name">About Me</h1>
+        <div class="hero-text">
+      <h1 class="hero-name">Sanjay Jacob</h1>
 
-<p class="hero-role">
-  Computer Vision & AI Engineering Engineer
-</p>
+      <p class="hero-role">AI Engineer · Agentic AI &amp; Computer Vision</p>
 
-<p class="hero-meta">
-  MEng Computer Vision & Artificial Intelligence · University of Limerick (2026)
-</p>
+      <p class="hero-meta">
+        MEng Computer Vision &amp; Artificial Intelligence · University of Limerick (2026)
+      </p>
 
-<p class="hero-summary">
-  I design and build intelligent vision systems and edge-AI solutions,
-  with a strong focus on real-world deployment, system robustness,
-  and human-centred applications. Recent MEng graduate based in Limerick, open to AI, ML and Computer Vision engineering roles across Ireland.
-</p>
+      <p class="hero-summary">
+        I build AI agents that automate real business operations, from taking
+        restaurant orders over WhatsApp to chasing overdue invoices, and computer
+        vision systems that run privately on edge hardware. Based in Limerick and
+        open to AI, ML and Computer Vision engineering roles across Ireland.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="cv-download-btn">View my projects</a>
+        <a href="assets/Sanjay_Jacob_CV.pdf" class="hero-btn-outline" download>📄 Download CV</a>
+      </div>
     </div>
 
     <!-- RIGHT: Profile Image -->
@@ -167,47 +172,54 @@
 <section id="skills" class="skills">
   <h2>Skills</h2>
 
-  <div class="skills-grid">
-    <div class="skills-card">
-      <h3>Programming Languages</h3>
-      <p>
-        Python (Advanced)· Java · JavaScript (Intermediate)· HTML/CSS (Basics) · Node.js
-      </p>
+    <div class="skills-grid">
+    <div class="skills-card primary">
+      <h3>Agentic AI &amp; LLMs</h3>
+      <ul class="skill-chips">
+        <li>Google ADK</li><li>Gemini</li><li>Multi-agent design</li>
+        <li>Tool / function calling</li><li>RAG</li><li>LangChain</li>
+        <li>ChromaDB</li><li>Prompt design</li><li>Human-in-the-loop</li>
+      </ul>
     </div>
 
     <div class="skills-card">
-      <h3>Machine Learning & AI</h3>
-      <p>
-        Deep Learning (CNNs, RNNs) · TensorFlow/Keras · Scikit-learn
-      </p>
+      <h3>Computer Vision &amp; Edge AI</h3>
+      <ul class="skill-chips">
+        <li>OpenCV</li><li>YOLOv8</li><li>MediaPipe</li><li>Pose estimation</li>
+        <li>Real-time video</li><li>Raspberry Pi 5</li><li>picamera2</li>
+      </ul>
     </div>
 
     <div class="skills-card">
-      <h3>Computer Vision</h3>
-      <p>
-        OpenCV · Image Classification · Object Detection · Edge Vision Systems
-      </p>
+      <h3>Machine Learning</h3>
+      <ul class="skill-chips">
+        <li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li>
+        <li>CNNs / RNNs</li><li>Transformers</li><li>Reinforcement learning</li>
+      </ul>
     </div>
 
     <div class="skills-card">
-      <h3>Data Science</h3>
-      <p>
-        Pandas · NumPy · Matplotlib · Seaborn · Data Analysis · Visualisation
-      </p>
+      <h3>Backend &amp; Cloud</h3>
+      <ul class="skill-chips">
+        <li>FastAPI</li><li>Node.js</li><li>Docker</li><li>Google Cloud Run</li>
+        <li>Twilio</li><li>AWS SageMaker (basics)</li><li>Cloudflare Tunnel</li>
+      </ul>
     </div>
 
     <div class="skills-card">
-      <h3>Cloud, DevOps & Tools</h3>
-      <p>
-        Cloud Deployment (Basic) · Git/GitHub · Docker
-      </p>
+      <h3>Languages</h3>
+      <ul class="skill-chips">
+        <li>Python (advanced)</li><li>JavaScript</li><li>Java</li>
+        <li>C#</li><li>C++</li><li>HTML / CSS</li>
+      </ul>
     </div>
 
     <div class="skills-card">
-      <h3>Development Methodologies</h3>
-      <p>
-        Agile · Scrum · Version Control · Collaborative Development
-      </p>
+      <h3>Ways of Working</h3>
+      <ul class="skill-chips">
+        <li>Agile / Scrum</li><li>Git / GitHub</li><li>Code review</li>
+        <li>Testing &amp; QA</li><li>Pandas / NumPy</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -279,7 +291,7 @@
       <a href="https://www.instagram.com/ssj_jcc/" target="_blank" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://wa.me/447399116311" target="_blank" aria-label="WhatsApp">
+      <a href="https://wa.me/353870341516" target="_blank" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
@@ -297,25 +309,22 @@
         📄 Download CV
       </a>
     </div>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required />
 
-    <form
-      onsubmit="alert('Thanks for reaching out! This is a demo form.'); return false;"
-    >
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Your name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email" required oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')"/>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Your email" required oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')"/>
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Your message"
+          required
+        ></textarea>
 
-      <label for="message">Message</label>
-      <textarea
-        id="message"
-        rows="4"
-        placeholder="Your message"
-        required
-      ></textarea>
-
-      <button type="submit">Send Message</button>
+        <button type="submit">Send Message</button>
     </form>
 
   </div>
@@ -364,7 +373,8 @@
   </ul>
 
   <p>
-    <strong>Status:</strong> Result: Second Class Honours, Grade 1 (2:1)
+    <strong>Result:</strong> Second Class Honours, Grade 1 (2:1)<br>
+    <strong>Status:</strong> Completed, awaiting conferring
   </p>
 </div>
 
@@ -403,7 +413,7 @@
   </ul>
 
   <p>
-    <strong>Degree Status:</strong> Graduated
+    <strong>Degree Status:</strong> Graduated <br>
     <strong>Result:</strong> Merit
   </p>
 
@@ -463,7 +473,7 @@
   </ul>
 
   <p>
-    <strong>Degree Status:</strong> Graduated
+    <strong>Degree Status:</strong> Graduated <br>
     <strong>Result:</strong> First Class Honours.
   </p>
 
@@ -610,6 +620,10 @@
       <strong>Skills demonstrated:</strong>
       Networking · Communication · Event Operations · Professionalism
     </p>
+    <div class="interest-media-row media-row-small">
+      <img src="Pictures/Achievements/dts_1.jpg" alt="Volunteering at Dublin Tech Summit 2026" />
+      <img src="Pictures/Achievements/dts_2.jpg" alt="Dublin Tech Summit 2026" />
+    </div>
   </div>
 
   <button class="toggle-exp-btn" id="toggle-other-exp">
@@ -619,7 +633,7 @@
   <div id="other-experience" style="display:none;">
     <div class="exp-entry">
       <h3>Limerick Strand Hotel — Food &amp; Beverage Assistant</h3>
-      <span>November 2025 – Present | Limerick, Ireland</span>
+      <span>November 2025 – October 2026 | Limerick, Ireland</span>
       <ul>
         <li>
           Supporting day-to-day food and beverage service in a fast-paced hotel
@@ -676,29 +690,50 @@
   ← Back
 </button>
   <div class="fullscreen-content">
-    <h2>🧓 Elder Monitoring System</h2>
+  <h2>🧓 Elder Monitoring System</h2>
 
-    <p>
-      An edge-AI based monitoring system designed to detect daily activities and
-      falls in elderly individuals using computer vision, with real-time alerts
-      for caregivers.
-    </p>
+  <p>
+    A privacy-preserving edge-AI system that monitors elderly people at home,
+    detecting daily activities and falls with computer vision and sending
+    real-time alerts to caregivers. All video is processed on the device, so
+    footage never leaves the home.
+  </p>
 
-    <h3>Key Features</h3>
-    <ul>
-      <li>Real-time human pose estimation for activity recognition</li>
-      <li>Fall detection logic optimised for edge inference</li>
-      <li>Designed for Raspberry Pi deployment</li>
-      <li>Flask-based backend for alerts and logging</li>
-      <li>Privacy-aware monitoring approach</li>
-    </ul>
+  <h3>Key Features</h3>
+  <ul>
+    <li>Real-time person detection (YOLOv8) and pose estimation (MediaPipe) for activity recognition</li>
+    <li>Fall detection logic optimised for on-device inference</li>
+    <li>Runs fully on a Raspberry Pi 5 with a Pi camera (picamera2)</li>
+    <li>Biometric patient calibration, so the system recognises the monitored person from body proportions</li>
+    <li>Automated health reports, generated on a schedule</li>
+    <li>Live caregiver dashboard, served securely through Cloudflare Tunnel</li>
+  </ul>
 
-    <h3>Technologies Used</h3>
-    <p>Python · Computer Vision · Pose Estimation · Raspberry Pi · Flask · Edge AI</p>
+  <h3>My Contribution</h3>
+  <ul>
+    <li>
+      Designed and built the <strong>biometric calibration module</strong>
+      (<code>patient_profile.py</code>) from scratch: it identifies the patient
+      by matching five normalised body ratios using Euclidean distance.
+    </li>
+    <li>Integrated the module into the backend routes and the caregiver dashboard.</li>
+    <li>Automated health-report generation with a scheduled cron job.</li>
+  </ul>
 
-    <h3>Status</h3>
-    <p><em>In active development</em></p>
-  </div>
+  <h3>Technologies Used</h3>
+  <p>
+    Python · YOLOv8 · MediaPipe · FastAPI · SQLite · picamera2 · Raspberry Pi 5 ·
+    Cloudflare Tunnel · Edge AI
+  </p>
+
+  <h3>Status</h3>
+  <p>Completed as my MEng dissertation (University of Limerick, 2026).</p>
+
+  <h3>Live Dashboard</h3>
+  <p>
+    <a href="https://iseehome.ai" target="_blank">Visit iseehome.ai →</a>
+  </p>
+</div>
 </div>
 
 <div id="project-wheelchair" class="fullscreen-panel">
@@ -787,7 +822,7 @@
     </ul>
 
     <h3>Technologies Used</h3>
-    <p>Unity · C++ · Game AI · 3D Environments · Real-Time Systems</p>
+    <p>Unity · C# · Game AI · 3D Environments · Real-Time Systems</p>
 
     <h3>GitHub</h3>
     <p>
@@ -974,7 +1009,7 @@
     </p>
 
     <ul>
-      <li>Discussed industry learning from AI placement year.</li>
+      <li>Discussed industry learning from my industrial placement year.</li>
       <li>Presented progression from academic study to applied AI development.</li>
       <li>Shared insights into career development and continuous learning.</li>
       <li>Engaged with students through Q&A and mentorship discussion.</li>
@@ -1031,11 +1066,6 @@
 </video>
 
 </div>
-
-      <!-- RIGHT: View more bar -->
-      <div class="gallery-more">
-        <span>View more in gallery →</span>
-      </div>
 
     </div>
   </div>
@@ -1158,12 +1188,12 @@
     <!-- ==============================
          FOOTER + BACK TO TOP
     =============================== -->
-    <footer>&copy; 2025 Sanjay Jacob. All Rights Reserved.</footer>
+    <footer>&copy; <span id="year"></span> Sanjay Jacob. All Rights Reserved.</footer>
     <button id="back-to-top" aria-label="Back to top">&#8679;</button>
 
     <!-- External JS -->
-    <script src="/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="/main.js"></script>
 
   </body>
 </html>

@@ -548,7 +548,7 @@ ul.skills-list li:hover {
 
 .projects-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1.8rem;
 }
 
@@ -1521,14 +1521,11 @@ footer {
 }
 
 .hero-role {
-  .hero-role {
   font-size: 1.3rem;
   font-weight: 600;
   color: #7fdaf0;
   margin-bottom: 0.6rem;
   letter-spacing: 0.3px;
-}
-
 }
 
 .hero-role::after {
@@ -1706,6 +1703,83 @@ footer {
   border-radius: 12px;
   box-shadow: 0 0 18px rgba(44,152,240,0.35);
 }
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.hero-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.4rem;
+  border-radius: 10px;
+  border: 1px solid rgba(102, 217, 232, 0.5);
+  color: #66d9e8;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-btn-outline:hover {
+  background: rgba(102, 217, 232, 0.1);
+  box-shadow: 0 0 16px rgba(102, 217, 232, 0.4);
+}
+
+@media (max-width: 768px) {
+  .hero-cta { justify-content: center; }
+}
+
+.skill-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.skill-chips li {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(44, 152, 240, 0.12);
+  border: 1px solid rgba(102, 217, 232, 0.25);
+  color: #cce7ff;
+}
+
+.skills-card.primary {
+  border-color: rgba(102, 217, 232, 0.55);
+  box-shadow: 0 0 20px rgba(44, 152, 240, 0.3);
+}
 /* ===================================================
    END OF STYLE SHEET
 =================================================== */
+/* =========================
+   Media Rows (photos side by side)
+========================= */
+
+.interest-media-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.4rem;
+}
+
+.interest-media-row img,
+.interest-media-row video {
+  width: calc(50% - 0.5rem);
+  min-width: 220px;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(44, 152, 240, 0.35);
+  object-fit: cover;
+}
+
+.media-row-small img {
+  max-width: 200px;
+  min-width: 160px;
+  aspect-ratio: 3 / 4;
+  object-position: center 25%;
+}
