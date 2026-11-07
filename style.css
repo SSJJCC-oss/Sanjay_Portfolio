@@ -1752,6 +1752,57 @@ footer {
   border-color: rgba(102, 217, 232, 0.55);
   box-shadow: 0 0 20px rgba(44, 152, 240, 0.3);
 }
+
+/* =========================
+   Project Groups
+========================= */
+
+.section-intro {
+  color: #a3b3cc;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 640px;
+}
+
+.project-group {
+  margin-bottom: 2.5rem;
+}
+
+.project-group:last-child {
+  margin-bottom: 0;
+}
+
+.project-group-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #66d9e8;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.group-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2c98f0, #66d9e8);
+  color: #0f111a;
+}
+
+.status-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: #f5b942;
+  color: #0f111a;
+  box-shadow: 0 0 10px rgba(245, 185, 66, 0.5);
+}
 /* ===================================================
    END OF STYLE SHEET
 =================================================== */
